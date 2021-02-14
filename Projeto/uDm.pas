@@ -107,11 +107,9 @@ begin
   except
     on e: exception do
     begin
-        ShowMessage(e.Message);
+        pMensagemErro(e.Message);
     end;
   end;
-
-
 end;
 
 procedure Tdm.DataModuleDestroy(Sender: TObject);

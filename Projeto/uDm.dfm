@@ -10,7 +10,6 @@ object dm: Tdm
       'User_Name=root'
       'Server=nicassio-pc'
       'DriverID=MySQL')
-    Connected = True
     LoginPrompt = False
     Transaction = tran
     Left = 24
@@ -43,6 +42,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object qryPedidocliente_id: TIntegerField
       AutoGenerateValue = arDefault
@@ -110,6 +110,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object qryPedidoProdutospedido_id: TIntegerField
       AutoGenerateValue = arDefault
@@ -183,6 +184,7 @@ object dm: Tdm
       FieldName = 'id'
       Origin = 'id'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object qryPesquisarPedidocliente_id: TIntegerField
       AutoGenerateValue = arDefault
